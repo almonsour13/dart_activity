@@ -26,7 +26,7 @@ void userList() {
   try {
     final file = File('bin/userList.txt');
     var lines = file.readAsLinesSync();
-    print("\x1B[32mStudent List\x1B[0m:");
+    print("\x1B[32mStudent File List\x1B[0m:");
     for (var line in lines) {
       print(line);
     }
@@ -39,7 +39,7 @@ void userList() {
 void main() {
   print('\n');
   userList();
-  print("Enter your name: ");
+  print("Enter a File Name: ");
   var name = stdin.readLineSync();
   readUserProfile(name);
 }
